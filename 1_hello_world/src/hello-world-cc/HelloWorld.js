@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './HelloWorld.css';
 
 export default class HelloWorld extends Component {
     constructor(props) {
@@ -35,8 +36,8 @@ export default class HelloWorld extends Component {
 
     render() {
         return <>
-            <h1 onClick={this.click}>Hello World Using {this.props.name}</h1>
-            <button onClick={() => this.clickWithParam('vivek')}>Click with Param</button>
+            <h1 className="pointer" onClick={this.click}>Hello World Using {this.props.name}</h1>
+            <button className="btn pointer" onClick={() => this.clickWithParam('vivek')}>Click with Param</button>
             <br />
             <br />
             {this.state.date}
